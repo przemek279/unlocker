@@ -92,7 +92,7 @@ def main():
     html = response.read()
     parser = CDSParser()
     parser.feed(str(html))
-    url = url + parser.HTMLDATA[-1] + '/'
+    url = url + parser.HTMLDATA[-2] + '/'
     parser.clean()
 
     # Open the latest release page
